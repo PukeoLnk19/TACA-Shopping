@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+ text-decoration: none;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background-image: url("patusai.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: right top;
+  
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+  background-position: center;
+  background-image: url();
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  /*background-color: #f1f1f1;*/
+  opacity: 0.5;
+  height: 300px; /* only for demonstration, should be removed */
+  background-image: url(data:image/jpeg;base64,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);
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  bottom: 1px;
+}
+
+.fruits h3:last-child{
+    color: red;
+}
+.fruits *:nth-child(2){
+    color: blue;
+}
+
+.box_p::after{
+    Content: " Hello";
+}
+
+.border{
+    padding: 8px 15px;
+    border: solid 1px red;
+    border-radius: 5px;
+}
+
+.box_contect{
+    width: 50%;
+    padding: 8px 15px;
+    border: solid 1px red;
+    border-radius: 5px;
+}
+.num{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.num:hover{
+    color: blue;
+}
+.box_num{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 10px 10px;
+    position: sticky;
+    top: 1px;
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: end;
+}
+img{
+    width: 5%;
+    background: #666;
+    border-radius: 10px;
+    padding: 5px 5px;
+    background-repeat: repeat;
+    cursor: pointer;
+}
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="box_num">
+        <div class="num">Home</div>
+        <div class="num">About</div>
+        <div class="num">Skill</div>
+        <div class="num">Education</div>
+        <div class="num">Contect</div>
+      </div>
+
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Vientiane</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+    <div class="fruits">
+        <span>Mango</span>
+        <span>Mango1</span>
+        <div>Orange</div>
+        <p>Tamarind</p>
+        <h3>Apple</h3>
+      </div>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p class="box_contect">London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p class="box_p">Content</p>
+    <div class="border">Hello</div>
+  </article>    
+
+  
+</section>
+
+<div class="position-parent">
+    <div class="position-child"></div>
+</div>
+
+<footer>
+    
+    <p>Footer</p>
+    <img src="patusai.jpg" alt="" >
+</footer>
+
+</body>
+</html>
+
